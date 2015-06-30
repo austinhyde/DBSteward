@@ -36,6 +36,8 @@ if [[ "$(php --version)" == HipHop* ]] ; then
   # clone it
   git clone https://github.com/PocketRent/hhvm-pgsql.git
   cd hhvm-pgsql
+  # only known working checkout...
+  git checkout 3.7.2
 
   # build it
   hphpize
