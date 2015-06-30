@@ -8,12 +8,12 @@ cd "$DIR"
 
 if [[ "$(php --version)" == HipHop* ]] ; then
   # install deps
-  apt-get install python-software-properties
-  add-apt-repository ppa:mapnik/boost
-  apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
+  sudo apt-get install python-software-properties
+  sudo add-apt-repository ppa:mapnik/boost
+  sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
   echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list.d/hhvm.list
-  apt-get update
-  apt-get install hhvm-dev
+  sudo apt-get update
+  sudo apt-get install hhvm-dev
 
   # clone it
   git clone https://github.com/PocketRent/hhvm-pgsql.git
