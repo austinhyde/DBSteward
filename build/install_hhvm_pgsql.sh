@@ -13,7 +13,7 @@ if [[ "$(php --version)" == HipHop* ]] ; then
   apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
   echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list.d/hhvm.list
   apt-get update
-  apt-get install hhvm
+  apt-get install hhvm-dev
 
   # clone it
   git clone https://github.com/PocketRent/hhvm-pgsql.git
