@@ -45,7 +45,7 @@ if [[ "$(php --version)" == HipHop* ]] ; then
   make
 
   # install it
-  cp pgsql.so /etc/hhvm/pgsql.so
-  echo 'extension_dir = /etc/hhvm' >> /etc/hhvm/php.ini
-  echo 'hhvm.extensions[pgsql] = pgsql.so' >> /etc/hhvm/php.ini
+  sudo cp pgsql.so /etc/hhvm/pgsql.so
+  sudo sh -c 'echo "extension_dir = /etc/hhvm" >> /etc/hhvm/php.ini'
+  sudo sh -c 'echo "hhvm.extensions[pgsql] = pgsql.so" >> /etc/hhvm/php.ini'
 fi
