@@ -1,4 +1,3 @@
-build
 tests/testdata*
 /nbproject/private/
 vendor
